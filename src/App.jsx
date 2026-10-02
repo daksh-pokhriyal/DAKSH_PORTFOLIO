@@ -3,6 +3,7 @@ import "./app.scss"
 import Dock from './components/Dock'
 import Nav from './components/Nav'
 import Github from './components/windows/Github'
+import Notes from './components/windows/Notes'
 
 
 
@@ -13,6 +14,7 @@ function App() {
       <Dock />
 
       <Github />
+      <Notes />
     </main>
   )
 }
