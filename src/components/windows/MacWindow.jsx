@@ -1,29 +1,15 @@
-
 import React from 'react'
-import {Rnd} from 'react-rnd'
+import { Rnd } from 'react-rnd'
 import "./window.scss"
 
-const MacWindow = ({children, title = "Portfolio"}) => {
+const MacWindow = ({ children, width = "40vw", height = "40vh" }) => {
     return (
         <Rnd
             default={{
-                x: 100,
-                y: 80,
-                width: 800,
-                height: 550
-            }}
-            minWidth={300}
-            minHeight={200}
-            bounds="window"
-            enableResizing={{
-                top: true,
-                right: true,
-                bottom: true,
-                left: true,
-                topRight: true,
-                bottomRight: true,
-                bottomLeft: true,
-                topLeft: true
+                width: width,
+                height: height,
+                x: 300,
+                y: 200
             }}
         >
             <div className="window">
@@ -34,9 +20,9 @@ const MacWindow = ({children, title = "Portfolio"}) => {
                         <div className="dot green"></div>
                     </div>
 
-                    <span>{title}</span>
-                </div>
+                    <div className="title"><p>ankurprajapti - zsh</p></div>
 
+                </div>
                 <div className="main-content">
                     {children}
                 </div>
